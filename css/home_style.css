@@ -1,0 +1,345 @@
+
+
+.textDesign{
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+
+.pinkColor{
+    color: #FF305B;
+}
+
+
+.navbar , .nav-link  {
+
+    transition:  background-color 0.5s ease , color 0.5s ease , padding 0.3s ease;
+
+}
+
+
+.home{
+    background: linear-gradient( #000000ce , #000000ce ), url(../imges/slider/slider-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.picBorder{
+    border: 10px solid #686868;
+    border-radius: 3%;
+}
+
+.pic{
+    width: 100%;
+    height: 100%;
+    transform: translate(30px , 25px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
+.slider{
+    position: absolute;
+    background-color: #68686898;
+    width: 100%;
+    height: 100%;
+    transition: top 1s;
+    top: 100%;
+}
+
+.pic:hover .slider{
+    top: 0%;
+}
+
+.pinkbtn{
+    background-color: #FF305B;
+    color: white;
+}
+
+.helloStick::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 25%;
+    width: 5px;
+    height: 60%;
+    background-color: #FF305B;
+}
+
+.grayBG{
+    background-color: #f1f1f1;
+}
+
+.line{
+    position: relative;
+    width: 20%;
+    height: 1px;
+    background-color:#FF305B ;
+    text-align: center;
+}
+
+.line::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 1px;
+    top: -600%;
+    right: 25%;
+    background-color: #FF305B;
+    margin: auto auto;
+}
+
+.line::after{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 1px;
+    bottom: -600%;
+    right: 25%;
+    background-color: #FF305B;
+    margin: auto auto;
+}
+
+.boxBG{
+    transition: background-color 1s , box-shadow 1s;
+}
+
+.boxBG:hover{
+    background-color: white;
+    box-shadow: 1px 0px 20px rgba(114, 114, 114, 0.767);
+}
+
+.boxBG i {
+    transition: transform 1s;
+}
+
+.boxBG:hover i{
+
+    transform: scale(1.3);
+    
+}
+
+
+.buttonBG{
+    background-color: transparent !important;
+    color: black !important;
+    margin: 0px 5px;
+    transition:  color 0.5s;
+}
+
+.buttonBG:hover{
+    color:#FF305B !important;
+}
+
+.overlay{
+    background-color: #7c797875;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.picHover:hover .overlay{
+    opacity: 1;
+}
+
+
+.numbers{
+    background-color: #f1f1f1;
+    padding: 80px 0px;
+    overflow: auto;
+}
+.numbers .numContanier{
+    padding: 0px 90px;
+}
+.numbers .numContanier .num1{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.numbers .numContanier .num1 i{
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ff305b;
+}
+.numbers .numContanier .num1 h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+    line-height: 29px;
+    font-weight: 800;
+    color: #333333;
+}
+.numbers .numContanier .num1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 800;
+    color: #555555;
+}
+
+
+.bgLiner{
+    background: linear-gradient(135deg , #ff305b 20% , #f1f1f1 15% ) ;
+}
+
+
+.stars{
+    color: yellow;
+}
+
+
+
+.contact{
+    padding: 80px 0px;
+    overflow: auto;
+}
+
+.contact .head{
+    text-align: center;
+}
+.contact .head h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 800;
+    color: #333333;
+}
+.contact .head .firstLine{
+    background-color: #ff305b;
+    width: 6%;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 4px;
+}
+.contact .head .secondLine{
+    background-color: #ff305b;
+    width: 12%;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 4px;
+}
+.contact .head .thirdLine{
+    background-color: #ff305b;
+    width: 6%;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.contact .contactContanier .formContanier{
+    text-align: center;
+}
+
+.contact .contactContanier .formContanier form .name{
+    width: 25%;
+    height: 40px;
+    margin-bottom: 30px;
+    border: rgba(128, 128, 128, 0.541) 1px solid;
+    border-radius: 5px;
+    padding: 0px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+.contact .contactContanier .formContanier form .mail{
+    width: 25%;
+    height: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: rgba(128, 128, 128, 0.541) 1px solid;
+    border-radius: 5px;
+    padding: 0px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+.contact .contactContanier .formContanier form .sub{
+    width: 53%;
+    height: 40px;
+    margin-bottom: 30px;
+    border: rgba(128, 128, 128, 0.541) 1px solid;
+    border-radius: 5px;
+    padding: 0px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+
+}
+.contact .contactContanier .formContanier form textarea{
+    width: 53%;
+    height: 120px;
+    border: rgba(128, 128, 128, 0.541) 1px solid;
+    border-radius: 5px;
+    padding: 15px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.contact .contactContanier a{
+    margin-left: 320px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: 400;
+    background-color: #ff305b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+.contact .contactContanier a:hover{
+    background-color: rgb(255, 38, 0);
+}
+
+.footer{
+    background-color: #333333;
+    padding: 50px 0px;
+    overflow: auto;
+    text-align: center;
+}
+
+.footer a i {
+    padding: 0px 10px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    transition:  color 0.5s;
+}
+.footer a i:hover{
+    color: #ff305b;
+}
+
+.footer p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer p a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #ff305b;
+}
+.footer p a:hover{
+    text-decoration: underline;
+}
