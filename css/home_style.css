@@ -7,7 +7,7 @@
 
 
 .pinkColor{
-    color: #FF305B;
+    color: #FF305B !important;
 }
 
 
@@ -146,44 +146,7 @@
 }
 
 
-.numbers{
-    background-color: #f1f1f1;
-    padding: 80px 0px;
-    overflow: auto;
-}
-.numbers .numContanier{
-    padding: 0px 90px;
-}
-.numbers .numContanier .num1{
-    width: 25%;
-    float: left;
-    text-align: center;
-}
-.numbers .numContanier .num1 i{
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #ff305b;
-}
-.numbers .numContanier .num1 h2{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 26px;
-    line-height: 29px;
-    font-weight: 800;
-    color: #333333;
-}
-.numbers .numContanier .num1 p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 800;
-    color: #555555;
-}
 
-
-.bgLiner{
-    background: linear-gradient(135deg , #ff305b 20% , #f1f1f1 15% ) ;
-}
 
 
 .stars{
@@ -192,154 +155,187 @@
 
 
 
-.contact{
-    padding: 80px 0px;
-    overflow: auto;
-}
 
-.contact .head{
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+.testimonial{
+    margin: 50px 30px 30px 30px;
     text-align: center;
+    position: relative;
 }
-.contact .head h1{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 40px;
-    line-height: 30px;
-    font-weight: 800;
-    color: #333333;
+.testimonial .description{
+    padding: 30px;
+    margin-bottom: 80px;
+    border-left: 1px solid rgb(0, 0, 0);
+    font-size: 15px;
+    color: #fff;
+    line-height: 33px;
+    position: relative;
 }
-.contact .head .firstLine{
-    background-color: #ff305b;
-    width: 6%;
+.testimonial .description:before,
+.testimonial .description:after{
+    content: "";
+    width: 20%;
     height: 1px;
-    margin: auto;
-    margin-bottom: 4px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.contact .head .secondLine{
-    background-color: #ff305b;
-    width: 12%;
-    height: 1px;
-    margin: auto;
-    margin-bottom: 4px;
+.testimonial .description:after{
+    top: auto;
+    bottom: 0;
 }
-.contact .head .thirdLine{
-    background-color: #ff305b;
-    width: 6%;
-    height: 1px;
-    margin: auto;
-    margin-bottom: 40px;
+.testimonial .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0;
+    position: relative;
 }
-
-.contact .contactContanier .formContanier{
-    text-align: center;
+.testimonial:before,
+.testimonial .title:before{
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
 }
-
-.contact .contactContanier .formContanier form .name{
-    width: 25%;
-    height: 40px;
-    margin-bottom: 30px;
-    border: rgba(128, 128, 128, 0.541) 1px solid;
-    border-radius: 5px;
-    padding: 0px 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #000000;
+.testimonial .title:before{ top: -80px; }
+.testimonial .pic{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-right: 60px;
 }
-.contact .contactContanier .formContanier form .mail{
-    width: 25%;
-    height: 40px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    border: rgba(128, 128, 128, 0.541) 1px solid;
-    border-radius: 5px;
-    padding: 0px 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #000000;
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
 }
-.contact .contactContanier .formContanier form .sub{
-    width: 53%;
-    height: 40px;
-    margin-bottom: 30px;
-    border: rgba(128, 128, 128, 0.541) 1px solid;
-    border-radius: 5px;
-    padding: 0px 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #000000;
-
+.owl-theme .owl-controls{ margin-top: 0; }
+.owl-theme .owl-controls .owl-page span{
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    background: #000;
+    outline: 2px solid #000;
+    outline-offset: 2px;
+    margin-right: 8px;
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
 }
-.contact .contactContanier .formContanier form textarea{
-    width: 53%;
-    height: 120px;
-    border: rgba(128, 128, 128, 0.541) 1px solid;
-    border-radius: 5px;
-    padding: 15px 15px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #000000;
-    margin-bottom: 10px;
-}
-.contact .contactContanier a{
-    margin-left: 320px;
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 38px;
-    font-weight: 400;
-    background-color: #ff305b;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.5s;
-}
-.contact .contactContanier a:hover{
-    background-color: rgb(255, 38, 0);
+.owl-theme .owl-controls .owl-page.active span{
+    background: #fff;
+    outline: 2px solid #fff;
 }
 
-.footer{
-    background-color: #333333;
-    padding: 50px 0px;
-    overflow: auto;
-    text-align: center;
+
+#loading{
+    z-index: 10000000;
 }
 
-.footer a i {
-    padding: 0px 10px;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #ffffff;
-    transition:  color 0.5s;
-}
-.footer a i:hover{
-    color: #ff305b;
-}
-
-.footer p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-.footer p a{
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #ff305b;
-}
-.footer p a:hover{
-    text-decoration: underline;
-}
+.sk-folding-cube {
+    margin: 20px auto;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  
+  .sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); 
+  }
+  .sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+            animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+            transform: scale(1.1) rotateZ(90deg);
+  }
+  .sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+            transform: scale(1.1) rotateZ(180deg);
+  }
+  .sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+            transform: scale(1.1) rotateZ(270deg);
+  }
+  .sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s; 
+  }
+  .sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  @-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    } 
+  }
+  
+  @keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    }
+  }
